@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<clsConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Conexion>1</Conexion>
+  <TipoLocal>0</TipoLocal>
+  <cnLocal>Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Documents and Settings\Nicolas\Mis documentos\Desarrollo\Roche\Proyecto Virgen del Rocío\BBDD\Tablas_HVR.mdb</cnLocal>
+  <DSNRemota>PLASENCIA</DSNRemota>
+  <reHC>\d{7}</reHC>
+  <TipoConsulta>0</TipoConsulta>
+  <MuestraMicro>0</MuestraMicro>
+</clsConfig>

@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="Current">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{53E439B3-BC50-466E-AB92-F049B12A77A6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>LibOmega</RootNamespace>
+    <AssemblyName>LibOmega</AssemblyName>
+    <MyType>Windows</MyType>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>k\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Xml.Serialization" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Clase COM\ComClsSincroniza.vb" />
+    <Compile Include="Clases BBDD\Clases BBDD\clsSincroniza.vb" />
+    <Compile Include="Clases BBDD\Clases BBDD\clsSincronizaEventsArgs.vb" />
+    <Compile Include="Clases BBDD\clsConfig.vb" />
+    <Compile Include="Clases BBDD\clsConfigBBDD.vb" />
+    <Compile Include="Clase COM\ComClsOmega.vb" />
+    <Compile Include="Clases BBDD\Clases BBDD\clsConsulta.vb" />
+    <Compile Include="Clases BBDD\SubClases BBDD\clsCorrelacion.vb" />
+    <Compile Include="Clases BBDD\SubClases BBDD\clsHC.vb" />
+    <Compile Include="Clases BBDD\SubClases BBDD\clsTAbrv.vb" />
+    <Compile Include="Clases BBDD\SubClases BBDD\clsTNormal.vb" />
+    <Compile Include="Clases BBDD\SubClases BBDD\clsTPerfilesMicro.vb" />
+    <Compile Include="Clases BBDD\SubClases BBDD\clsTRel.vb" />
+    <Compile Include="Dialogos\DialogoDiagnostico.Designer.vb">
+      <DependentUpon>DialogoDiagnostico.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogos\DialogoDiagnostico.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogos\DialogoHistoriaClinica.Designer.vb">
+      <DependentUpon>DialogoHistoriaClinica.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogos\DialogoHistoriaClinica.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogos\DialogoOrigenes.Designer.vb">
+      <DependentUpon>DialogoOrigenes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogos\DialogoOrigenes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogos\DialogoServicios.Designer.vb">
+      <DependentUpon>DialogoServicios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogos\DialogoServicios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogos\DialogoDestinos.Designer.vb">
+      <DependentUpon>DialogoDestinos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogos\DialogoDestinos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogos\DialogoConfiguracion.Designer.vb">
+      <DependentUpon>DialogoConfiguracion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogos\DialogoConfiguracion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogos\DialogoConfiguracionBBDD.Designer.vb">
+      <DependentUpon>DialogoConfiguracionBBDD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogos\DialogoConfiguracionBBDD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogos\DialogoMedicos.Designer.vb">
+      <DependentUpon>DialogoMedicos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogos\DialogoMedicos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogos\DialogoPruebas.Designer.vb">
+      <DependentUpon>DialogoPruebas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogos\DialogoPruebas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogos\DialogoTipos.Designer.vb">
+      <DependentUpon>DialogoTipos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogos\DialogoTipos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Util\clsINI.vb" />
+    <Compile Include="Util\clsUtil.vb" />
+    <Compile Include="Util\ListViewOrder.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Dialogos\DialogoDiagnostico.resx">
+      <DependentUpon>DialogoDiagnostico.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogos\DialogoHistoriaClinica.resx">
+      <DependentUpon>DialogoHistoriaClinica.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogos\DialogoOrigenes.resx">
+      <DependentUpon>DialogoOrigenes.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogos\DialogoServicios.resx">
+      <DependentUpon>DialogoServicios.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogos\DialogoDestinos.resx">
+      <DependentUpon>DialogoDestinos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogos\DialogoConfiguracion.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DialogoConfiguracion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogos\DialogoConfiguracionBBDD.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DialogoConfiguracionBBDD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogos\DialogoMedicos.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DialogoMedicos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogos\DialogoPruebas.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DialogoPruebas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogos\DialogoTipos.resx">
+      <DependentUpon>DialogoTipos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="LibOmega.ini">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
